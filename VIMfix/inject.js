@@ -196,7 +196,7 @@ function trackUrlChanges() {
                 fix_modal_2025 = new FixModal()
                 fix_modal_2025.createListener()
             } // ЕСЛИ ССЫЛКА ВЕДЕТ НА ПОСТУПЛЕНИЕ ЗАПУСКАЕМ СКРИПТ ВЫШЕ 
-            else {fix_modal_2025.deleteListener()}                                 // ИНАЧЕ ОТКЛЮЧАЕМ ПРОСЛУШКУ МОДУЛЬНЫХ ОКОН И СПИМ
+            else {fix_modal_2025.deleteListener()} // ИНАЧЕ ОТКЛЮЧАЕМ ПРОСЛУШКУ МОДУЛЬНЫХ ОКОН И СПИМ
             currentUrl = href // ЗАПОМНИТЬ НОВУЮ ССЫЛКУ 
 
         }});
