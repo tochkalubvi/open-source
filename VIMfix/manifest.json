@@ -1,0 +1,14 @@
+{
+    "name": "VIMfix",
+    "manifest_version": 3,
+    "description": "VirtualPos fix. Возвращает корректную работу модальных окон во время принятия поставки.",
+    "version": "2.0",
+    "content_scripts": [ {
+        "world": "MAIN",
+        "matches": [
+        "https://tl.myvirtualpos.ru/cpanel/console?path=*", "https://tl.myvirtualpos.ru/console*"
+        ],
+        "js": [ "inject.js"]
+    }],
+    "permissions": []
+}
