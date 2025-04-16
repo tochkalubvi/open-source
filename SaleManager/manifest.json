@@ -1,0 +1,17 @@
+{
+    "name": "SaleManager",
+    "manifest_version": 3,
+    "description": "SaleManager",
+    "version": "4.0",
+    "content_scripts": [ {
+        "world": "MAIN",
+        "matches": [
+            "https://tl.myvirtualpos.ru/console/*", 
+            "https://tl.myvirtualpos.ru/cpanel/console?path=/*"
+        ],
+        "js": ["inject.js"],
+        "all_frames": true
+    }],
+    "permissions": ["https://tl.myvirtualpos.ru/*"]
+
+  }
